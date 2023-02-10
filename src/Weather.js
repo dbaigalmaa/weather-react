@@ -26,7 +26,7 @@ export default function Weather(props) {
 
     axios.get(apiUrl).then(showWeather);
     return (
-      <div>
+      <div className="Weather">
         <ul>
           <li>Temperature: {Math.round(temp)}°C</li>
           <li>Description: {desc}</li>
