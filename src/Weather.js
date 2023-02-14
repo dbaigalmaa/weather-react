@@ -34,7 +34,7 @@ export default function Weather(props) {
     "Dec",
   ];
   let day = days[currentDate.getDay()];
-  let month = months[currentDate.getMonth()];
+
   let hours = currentDate.getHours();
   let minutes = currentDate.getMinutes();
   if (minutes < 10) {
