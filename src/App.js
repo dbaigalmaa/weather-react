@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Weather from "./Weather";
+
 import "./App.css";
 
 function App() {
@@ -17,16 +18,18 @@ function App() {
   }
   return (
     <div className="App">
-      <h1>Weather App</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="search"
-          placeholder="Enter a city"
-          onChange={updateSearch}
-        />
-        <input type="submit" value="Search" />
-      </form>
-      <Weather city={city} />
+      <div className="weather-container">
+        <h1>Weather App</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="search"
+            placeholder="Enter a city"
+            onChange={updateSearch}
+          />
+          <input type="submit" value="Search" />
+        </form>
+        <Weather city={city} />
+      </div>
     </div>
   );
 }
