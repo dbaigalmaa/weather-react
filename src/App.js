@@ -4,7 +4,7 @@ import Weather from "./Weather";
 import "./App.css";
 
 function App() {
-  let [city, setCity] = useState("");
+  let [city, setCity] = useState("Paris");
   let [search, setSearch] = useState("");
 
   function handleSubmit(event) {
