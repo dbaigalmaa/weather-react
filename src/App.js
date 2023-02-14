@@ -30,6 +30,12 @@ function App() {
         </form>
         <Weather city={city} />
       </div>
+      <div class="github">
+        <a href="https://github.com/dbaigalmaa/weather-react" target="_blank">
+          Open source code
+        </a>
+        by Bella
+      </div>
     </div>
   );
 }
